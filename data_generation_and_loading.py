@@ -345,7 +345,7 @@ class MeshInMemoryDataset(MixinMeshDataset, InMemoryDataset):
     def download(self):
         pass
 
-    def _process_set(self, files_list):
+    def _process_set(self, files_list):        
         dataset = []
         for fname in tqdm.tqdm(files_list):
             mesh_verts = self.load_mesh(fname)
