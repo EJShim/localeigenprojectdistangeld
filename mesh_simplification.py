@@ -254,7 +254,7 @@ if __name__ == '__main__':
     #                          process=False)
     # mesh = mesh.simplify_quadratic_decimation(mesh.faces.shape[0] / 100)
     t = time.time()
-    simplifier = MeshSimplifier('UHM_models/mean_nme_fcolor_b.ply', debug=True)
+    simplifier = MeshSimplifier('configurations/uhm_template.ply', debug=True)
     m, down, up = simplifier(10, region_weighted=True,
                              edge_length_weighted=False)
     print(time.time() - t)
